@@ -2,11 +2,8 @@ SITE
   remote: http://community.opscode.com/api/v1
   specs:
     apt (1.4.8)
-    build-essential (1.1.2)
+    build-essential (1.4.2)
     cpu (0.2.0)
-    haproxy (1.6.2)
-      build-essential (>= 0.0.0)
-      cpu (>= 0.2.0)
     java (1.19.2)
     openssl (1.1.0)
 
@@ -21,14 +18,24 @@ GIT
 GIT
   remote: https://github.com/andreassimon/cookbook-tomcat-blue-green.git
   ref: master
-  sha: 602e19c3860795df782f8ee9a1ada79a9ed79bb5
+  sha: 36855803c56801e8fb7d5ac039fc1968bee937a1
   specs:
     tomcat-blue-green (0.15.3)
       java (>= 0.0.0)
       openssl (>= 0.0.0)
 
+GIT
+  remote: https://github.com/hw-cookbooks/haproxy.git
+  ref: d03f269
+  sha: d03f269d8d342953755a878a356b38f02039b059
+  specs:
+    haproxy (1.6.3)
+      build-essential (>= 0.0.0)
+      cpu (>= 0.2.0)
+
 DEPENDENCIES
   apt (= 1.4.8)
+  haproxy (>= 0)
   haproxy-blue-green (>= 0)
   tomcat-blue-green (>= 0)
 
