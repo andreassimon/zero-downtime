@@ -1,0 +1,5 @@
+{
+    "id": "deployer",
+    "password": "supersecret",
+    "roles": ["manager-script"]
+}

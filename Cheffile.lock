@@ -1,0 +1,40 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.4.8)
+    build-essential (1.1.2)
+    cpu (0.2.0)
+    java (1.19.2)
+    openssl (1.1.0)
+
+GIT
+  remote: https://github.com/andreassimon/cookbook-tomcat-blue-green.git
+  ref: master
+  sha: 602e19c3860795df782f8ee9a1ada79a9ed79bb5
+  specs:
+    tomcat (0.15.3)
+      java (>= 0.0.0)
+      openssl (>= 0.0.0)
+
+GIT
+  remote: https://github.com/hw-cookbooks/haproxy.git
+  ref: d03f269
+  sha: d03f269d8d342953755a878a356b38f02039b059
+  specs:
+    haproxy (1.6.3)
+      build-essential (>= 0.0.0)
+      cpu (>= 0.2.0)
+
+PATH
+  remote: ../cookbooks/grails
+  specs:
+    grails (0.1.0)
+      tomcat (>= 0.0.0)
+
+DEPENDENCIES
+  apt (= 1.4.8)
+  build-essential (= 1.1.2)
+  grails (>= 0)
+  haproxy (>= 0)
+  tomcat (>= 0)
+
