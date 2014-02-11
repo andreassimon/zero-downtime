@@ -1,9 +1,7 @@
 site "http://community.opscode.com/api/v1"
 
 cookbook "apt", "1.4.8"
-cookbook "build-essential", "1.1.2"
-cookbook "haproxy",
-  :git => "https://github.com/hw-cookbooks/haproxy.git",
-  :ref => "d03f269"
-cookbook "tomcat",
+cookbook "tomcat-blue-green",
   :git => "https://github.com/andreassimon/cookbook-tomcat-blue-green.git"
+cookbook "haproxy-blue-green",
+  :git => "https://github.com/andreassimon/cookbook-haproxy-blue-green.git"
