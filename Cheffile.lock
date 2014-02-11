@@ -25,16 +25,9 @@ GIT
       build-essential (>= 0.0.0)
       cpu (>= 0.2.0)
 
-PATH
-  remote: ../cookbooks/grails
-  specs:
-    grails (0.1.0)
-      tomcat (>= 0.0.0)
-
 DEPENDENCIES
   apt (= 1.4.8)
   build-essential (= 1.1.2)
-  grails (>= 0)
   haproxy (>= 0)
   tomcat (>= 0)
 

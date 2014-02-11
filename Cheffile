@@ -7,5 +7,3 @@ cookbook "haproxy",
   :ref => "d03f269"
 cookbook "tomcat",
   :git => "https://github.com/andreassimon/cookbook-tomcat-blue-green.git"
-cookbook "grails",
-  :path => "../cookbooks/grails"
